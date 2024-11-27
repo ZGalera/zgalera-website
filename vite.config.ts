@@ -10,6 +10,7 @@ import vue from '@vitejs/plugin-vue';
  * @see https://vite.dev/config/
  */
 export default defineConfig({
+	base: '', // 👈 https://stackoverflow.com/a/69746868
 	plugins: [
 		vue(),
 		createHtmlPlugin({
