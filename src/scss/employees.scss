@@ -1,0 +1,80 @@
+#employees {
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: center;
+	align-items: stretch;
+
+	margin-top: 20px;
+
+	gap: 15px;
+
+	.employee {
+		display: flex;
+		flex-direction: column;
+
+		align-items: center;
+		justify-content: flex-start;
+
+		background-color: #fafafa;
+		border: #adadad solid 1.34px;
+		border-radius: 30px;
+
+		padding: 20px;
+		width: 230px;
+
+		gap: 4px;
+
+		box-shadow: #0000000a 0px 0px 10px 0px;
+
+		.name,
+		.github,
+		.about {
+			text-align: center;
+		}
+
+		.avatar {
+			width: 90px;
+			height: 90px;
+
+			border-radius: 50%;
+		}
+
+		.name {
+			font-size: 24px;
+			margin: 0;
+
+			margin-top: 8px;
+		}
+
+		.github {
+			$color: #626262;
+
+			font-size: 13px;
+
+			font-weight: 600;
+			color: $color;
+			// margin-top: -3px;
+
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
+		}
+
+		hr {
+			width: -webkit-fill-available;
+			background-color: #adadad;
+		}
+
+		.about {
+			font-size: 14px;
+			margin-top: 2px;
+			// font-weight: 500;
+
+			font-family: "IBM Plex Mono";
+
+			// color: #5b5b5b;
+		}
+	}
+}
