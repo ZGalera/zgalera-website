@@ -13,13 +13,8 @@ export default defineConfig({
 	base: '', // 👈 https://stackoverflow.com/a/69746868
 	plugins: [
 		vue(),
-		createHtmlPlugin({
-			minify: true,
-		}),
-		viteCompression({
-			include: /\.(js|css|html)$/i,
-			// verbose: true
-		}),
+		createHtmlPlugin({ minify: true }),
+		viteCompression({ include: /\.(js|css|html)$/i }),
 		Sitemap({ hostname: 'https://zgalera.github.io/zgalera-website/' }),
 	],
 });
