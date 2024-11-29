@@ -1,4 +1,4 @@
-import type { Employee } from './types';
+import type { Employee } from './types'
 
 /**
  * A list of employees in the company.
@@ -86,8 +86,9 @@ const employeesList: Employee[] = [
 	{
 		name: 'Arwi',
 		github: 'Arwichok',
-		about: 'Тімлід команди С.Л.О.Н.Я.Р.И (Стабільність, Лідерство, Організованість, Навчання, Якість, Розвиток, Иніціатива)'
-	}
-];
+		about:
+			'Тімлід команди С.Л.О.Н.Я.Р.И (Стабільність, Лідерство, Організованість, Навчання, Якість, Розвиток, Иніціатива)',
+	},
+]
 
-export default employeesList;
+export default employeesList

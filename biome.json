@@ -2,7 +2,13 @@
 	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": []
+		"ignore": [
+			"dist",
+			"node_modules",
+			"package.json",
+			"bun.lockb",
+			"tsconfig*.json"
+		]
 	},
 	"formatter": {
 		"enabled": true,

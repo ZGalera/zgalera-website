@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite';
-import { createHtmlPlugin } from 'vite-plugin-html';
-import { compression as viteCompression } from 'vite-plugin-compression2';
-import Sitemap from 'vite-plugin-sitemap';
-import vue from '@vitejs/plugin-vue';
+import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite'
+import { compression as viteCompression } from 'vite-plugin-compression2'
+import { createHtmlPlugin } from 'vite-plugin-html'
+import Sitemap from 'vite-plugin-sitemap'
 
 /**
  * Vite configuration file.
@@ -17,4 +17,4 @@ export default defineConfig({
 		viteCompression({ include: /\.(js|css|html)$/i }),
 		Sitemap({ hostname: 'https://zgalera.github.io/zgalera-website/' }),
 	],
-});
+})
