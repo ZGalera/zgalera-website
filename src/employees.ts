@@ -8,7 +8,7 @@ const employeesList: Employee[] = [
 		name: 'Dmytro',
 		customAvatar: true,
 		github: 'danraponga',
-		about: 'СTO',
+		about: 'СTO (Станція Технічного Обслуговування)',
 	},
 	{
 		name: 'Сашко',
