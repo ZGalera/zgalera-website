@@ -83,6 +83,11 @@ const employeesList: Employee[] = [
 		github: 'corruptmane',
 		about: 'Зробив з нашого хеловорда к8с кластер',
 	},
+	{
+		name: 'Arwi',
+		github: 'Arwichok',
+		about: 'Тімлід команди С.Л.О.Н.Я.Р.И (Стабільність, Лідерство, Організованість, Навчання, Якість, Розвиток, Иніціатива)'
+	}
 ];
 
 export default employeesList;
