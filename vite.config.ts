@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 import { compression as viteCompression } from 'vite-plugin-compression2'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import Sitemap from 'vite-plugin-sitemap'
+import autoprefixer from 'autoprefixer'
 
 /**
  * Vite configuration file.
@@ -17,4 +18,9 @@ export default defineConfig({
 		viteCompression({ include: /\.(js|css|html)$/i }),
 		Sitemap({ hostname: 'https://zgalera.github.io/zgalera-website/' }),
 	],
+	css: {
+		postcss: {
+			plugins: [autoprefixer()],
+		},
+	},
 })
