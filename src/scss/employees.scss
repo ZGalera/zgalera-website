@@ -27,6 +27,12 @@
 
 		box-shadow: #0000000a 0px 0px 10px 0px;
 
+		transition: transform ease-in-out 0.2s;
+
+		&:hover {
+			transform: scale(1.01) translateY(-2px);
+		}
+
 		.name,
 		.github,
 		.about {

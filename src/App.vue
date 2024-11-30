@@ -49,7 +49,8 @@ onMounted(() => {
 			<br>
 			<p>Our main goal is to build the largest and least paid galley in the world with cheap labor.</p>
 			<br>
-			<p>For a $100 membership fee, we offer you to join our company as an intern. During the internship, you will not
+			<p>For a <u class="dotted">$100</u> membership fee, we offer you to join our company as an intern. During the
+				internship, you will not
 				only receive mentoring from the best specialists (<Username>Krak3nDev</Username>, <Username>PlzTrustMe
 				</Username>, <Username>Latand
 				</Username>, <Username>pluresque</Username>
@@ -61,8 +62,11 @@ onMounted(() => {
 			<p>We offer full remote work. Management and communications in the company are carried out in accordance with the
 				Agile methodology within our personal TelegramCRM system "Загальний Чат".
 				We also guarantee growth within the company depending on the hours spent working (including on weekends) - from
-				10 hours/day is a good indicator that you are striving to become better and, together with us, lead the company
-				to heights.</p>
+				<u class="dotted">10</u> hours/day is a good indicator that you are striving to become better and, together with
+				us,
+				lead the company
+				to heights.
+			</p>
 		</div>
 
 		<h2>Company employees:</h2>
