@@ -9,19 +9,16 @@ export default {
 	props: {
 		username: {
 			type: String,
-			required: true,
-			validator(value) {
-				// Простий валідатор: відповідність GitHub username правилам
-				return githubUsernameRegex.test(value);
-			},
+			required: false,
+			validator: githubUsernameRegex.test
 		},
 	},
 	computed: {
 		username() {
-			// Використовуємо слотний контент, якщо пропс `username` відсутній
-			const slotContent = this.$slots.default && this.$slots.default()[0]?.children?.trim();
+			// Використовуємо пропс `username`, потім текст у слоті, інакше — 'unknown'
+			const slotContent = this.$slots?.default()[0]?.children?.trim();
 			return this.username || slotContent || 'unknown';
-		},
-	},
+		}
+	}
 };
 </script>
