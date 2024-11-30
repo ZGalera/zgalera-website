@@ -11,5 +11,6 @@
 	},
 	"[vue]": {
 		"editor.defaultFormatter": "Vue.volar"
-	}
+	},
+	"vite.devCommand": "bun run dev"
 }

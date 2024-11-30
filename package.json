@@ -12,6 +12,7 @@
 		"svgo": "svgo src/assets/**/*.svg"
 	},
 	"dependencies": {
+		"github-username-regex": "^1.0.0",
 		"vue": "^3.5.13"
 	},
 	"devDependencies": {

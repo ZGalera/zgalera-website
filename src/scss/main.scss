@@ -1,15 +1,24 @@
-@use "animations.scss";
-@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=IBM+Plex+Mono:wght@400;500&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&display=swap");
+@use 'animations.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=IBM+Plex+Mono:wght@400;500&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&display=swap');
 
 body {
-	font-family: "Inter", sans-serif;
+	font-family: 'Inter', sans-serif;
 	margin: 0;
 	background-color: #fafafa;
 }
 
 h1 {
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 	margin: 0 10px;
+}
+
+u.dotted {
+	text-decoration-style: dotted;
+}
+
+.github {
+	color: #626262;
+	text-decoration: none;
 }
 
 #container {
@@ -54,6 +63,7 @@ h1 {
 
 #description {
 	margin-block: 8px;
+	max-width: 1200px;
 
 	p {
 		font-weight: 500;
@@ -75,7 +85,6 @@ hr {
 	border-radius: $height;
 	background-color: black;
 }
-
 
 @media (max-width: 600px) {
 	h1 {

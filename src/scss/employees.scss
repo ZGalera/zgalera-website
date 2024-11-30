@@ -48,18 +48,10 @@
 		}
 
 		.github {
-			$color: #626262;
-
 			font-size: 13px;
 
 			font-weight: 600;
-			color: $color;
 			// margin-top: -3px;
-
-			a {
-				text-decoration: none;
-				color: inherit;
-			}
 		}
 
 		hr {
@@ -73,7 +65,7 @@
 			margin-top: 2px;
 			// font-weight: 500;
 
-			font-family: "IBM Plex Mono";
+			font-family: 'IBM Plex Mono';
 
 			// color: #5b5b5b;
 		}

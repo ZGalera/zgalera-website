@@ -1,8 +1,11 @@
 import { createApp } from 'vue'
 import './scss/main.scss'
 import App from './App.vue'
+import Username from './components/Username.vue'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.component('Username', Username)
+app.mount('#app')
 
 // Source: https://gist.github.com/okineadev/753583c3df860294b05d7f450c9eb8b4
 console.log(
