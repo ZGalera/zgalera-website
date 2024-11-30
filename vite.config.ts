@@ -11,12 +11,12 @@ import autoprefixer from 'autoprefixer'
  * @see https://vite.dev/config/
  */
 export default defineConfig({
-	base: '', // 👈 https://stackoverflow.com/a/69746868
+	// base: '', // 👈 https://stackoverflow.com/a/69746868
 	plugins: [
 		vue(),
 		createHtmlPlugin({ minify: true }),
 		viteCompression({ include: /\.(js|css|html)$/i }),
-		Sitemap({ hostname: 'https://zgalera.github.io/zgalera-website/' }),
+		Sitemap({ hostname: 'https://zgalera.github.io/' }),
 	],
 	css: {
 		postcss: {
