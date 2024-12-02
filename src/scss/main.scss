@@ -8,12 +8,34 @@
 body {
 	font-family: 'Inter', sans-serif;
 	margin: 0;
+
 	background-color: #fafafa;
+	text-shadow: 0 0 8px #7575750f;
 }
 
 h1 {
 	font-family: 'Poppins', sans-serif;
+}
+
+h1 {
 	margin: 0 10px;
+}
+
+h2 {
+	font-size: 35px;
+	margin-block: 45px;
+}
+
+h1,
+p {
+	cursor: default;
+}
+
+.detailed-description {
+	text-align: left;
+	text-wrap-style: pretty;
+
+	max-width: 900px;
 }
 
 u.dotted {
@@ -21,8 +43,30 @@ u.dotted {
 }
 
 .github {
-	color: #626262;
 	text-decoration: none;
+	color: #626262;
+
+	u {
+		position: relative;
+		text-decoration: none;
+	}
+
+	u::before {
+		position: absolute;
+		content: '';
+		width: 0;
+		$height: 0.09em;
+		height: $height; // Proportional height
+		border-radius: $height;
+		background-color: currentColor;
+		bottom: 0px;
+		transition: width 0.3s ease-in-out;
+	}
+
+	&:hover u::before {
+		background-color: currentColor;
+		width: 100%;
+	}
 }
 
 #container {
@@ -57,6 +101,9 @@ u.dotted {
 	h1 {
 		font-size: 90px;
 		font-weight: 600;
+
+		// cursor: default;
+		letter-spacing: -2px;
 	}
 
 	img {
@@ -68,6 +115,7 @@ u.dotted {
 #description {
 	margin-block: 8px;
 	max-width: 1200px;
+	text-align: center;
 
 	p {
 		font-weight: 500;
@@ -75,7 +123,7 @@ u.dotted {
 
 		margin: 5px 0;
 
-		text-align: center;
+		// text-align: center;
 	}
 }
 
@@ -95,8 +143,25 @@ hr {
 		font-size: 50px !important;
 	}
 
+	h2 {
+		font-size: 25px !important;
+		margin-block: 30px;
+	}
+
 	#title img {
 		width: 65px;
 		height: 65px;
 	}
+}
+
+.spark {
+	position: absolute;
+	width: 30px;
+	height: 8px;
+	border-radius: 3px;
+	// background-color: #212121;
+	backdrop-filter: invert(
+		100%
+	); // https://stackoverflow.com/a/77307800/21165921
+	transform: none;
 }

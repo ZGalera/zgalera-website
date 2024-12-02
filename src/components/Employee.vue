@@ -1,13 +1,13 @@
 <template>
 	<div class="employee">
-		<img class="avatar"
-			:src="employee.customAvatar ? avatarMap[employee.github.toLowerCase()] : employee.customAvatarURL ? employee.customAvatarURL : `https://github.com/${employee.github.toLowerCase()}.png`"
-			:alt="employee.name" width="90" height="90">
+		<img class="avatar" :src="employee.customAvatar ? avatarMap[employee.github.toLowerCase()] :
+			employee.customAvatarURL ? employee.customAvatarURL :
+				`https://github.com/${employee.github.toLowerCase()}.png`" :alt="employee.name" width="90" height="90">
 
 		<h3 class="name">{{ employee.name }}</h3>
 
 		<Username>{{ employee.github }}</Username>
-		<hr>
+		<hr><!---------------------------------------->
 		<span class="about">{{ employee.about }}</span>
 	</div>
 </template>

@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import './scss/main.scss'
 import App from './App.vue'
 import Username from './components/Username.vue'
+import './animations/sparks'
 
 const app = createApp(App)
 app.component('Username', Username)
