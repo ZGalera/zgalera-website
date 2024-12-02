@@ -31,7 +31,6 @@ defineProps<{
 
 <style src="../scss/employees.scss"></style>
 
-
 <template>
 	<div class="employee">
 		<img class="avatar" :src="employee.customAvatar ? avatarMap[employee.github.toLowerCase()] :

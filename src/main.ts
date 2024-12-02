@@ -38,6 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		const center = { x: e.pageX, y: e.pageY }
 		makeBurst(center)
 	})
+
+	// const employeesCards = document.getElementsByClassName('employee')
+	// for (let i = 0; i < employeesCards.length; i++) {
+	// 	employeesCards[i].addEventListener('click', () => {
+
+	//   })
+	// }
 })
 
 // Source: https://gist.github.com/okineadev/753583c3df860294b05d7f450c9eb8b4

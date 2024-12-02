@@ -1,0 +1,111 @@
+// Taken from https://codepen.io/Quiddlee/pen/MWPbKxg
+
+.btn {
+	$height: 6rem;
+
+	box-sizing: border-box;
+	display: inline-block;
+	height: $height;
+	width: 16.5rem;
+	position: relative;
+	border: none;
+	border-radius: $height;
+	cursor: pointer;
+	overflow: hidden;
+	background-color: transparent;
+	color: #fafafa;
+
+	&:hover &__bg {
+		scale: 0.94;
+	}
+
+	&:hover &__text-out {
+		transition: transform 1s cubic-bezier(0.32, 0.99, 0.49, 0.99), opacity 0.4s;
+		transform: translateY(-33.333333%);
+		opacity: 0;
+	}
+
+	&:hover &__text-in {
+		transition: 1s all cubic-bezier(0.32, 0.99, 0.49, 0.99);
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	&:hover &__bg__layer-first,
+	&:hover &__bg__layer-second,
+	&:hover &__bg__layer-third {
+		border-radius: 60% 60% 0 0;
+		transform: translateY(1rem);
+	}
+
+	&:hover &__bg__layer-first {
+		transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms,
+			border-radius 0.2s cubic-bezier(0.19, 1, 0.22, 1) 270ms;
+	}
+
+	&:hover &__bg__layer-second {
+		transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1) 300ms,
+			border-radius 0.2s cubic-bezier(0.19, 1, 0.22, 1) 470ms;
+	}
+
+	&:hover &__bg__layer-third {
+		transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1) 380ms,
+			border-radius 0.2s cubic-bezier(0.19, 1, 0.22, 1) 670ms;
+	}
+
+	&__text-out,
+	&__text-in {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		position: absolute;
+		inset: 0;
+		margin: auto;
+
+		font-weight: 700;
+		font-size: 1.8rem;
+		z-index: 10;
+		font-family: Poppins, system-ui;
+	}
+
+	&__text-in {
+		opacity: 0;
+		transform: translateY(33.333333%);
+	}
+
+	&__bg {
+		height: inherit;
+		width: inherit;
+		transition: scale 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+		background-color: #212121;
+		border-radius: 999rem;
+		overflow: hidden;
+
+		&__layer {
+			position: absolute;
+			display: block;
+			bottom: 0;
+			left: 50%;
+			translate: -50%;
+			border-radius: 999rem 999rem 0 0;
+			border: none;
+			width: 120%;
+			height: 200%;
+			z-index: 20;
+			transform: translateY(100%) translateX(0);
+
+			&-first {
+				background-color: #a474ff;
+			}
+
+			&-second {
+				background-color: #17f1d1;
+			}
+
+			&-third {
+				background-color: #212121;
+			}
+		}
+	}
+}

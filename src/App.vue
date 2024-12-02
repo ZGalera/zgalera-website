@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+import Button from './components/Button.vue';
 import Employee from './components/Employee.vue'
 import Username from './components/Username.vue';
 
@@ -37,6 +38,7 @@ const employees = ref(employeesList)
 				</p>
 
 				<br>
+
 				<p>We offer full remote work. Management and communications in the company are carried out in accordance with
 					the
 					Agile methodology within our personal TelegramCRM system "Загальний Чат".
@@ -57,6 +59,12 @@ const employees = ref(employeesList)
 		<div id="employees">
 			<Employee v-for="(employee, index) in employees" :key="index" :employee="employee" />
 		</div>
+
+		<a
+			href="https://github.com/ZGalera/invite/issues/new?assignees=&labels=join-request&projects=&template=join-organization.yml&title=Request+to+Join%3A+%5BYour+Name%5D">
+			<Button id="join-button">Join our team</Button>
+		</a>
+
 
 	</div>
 </template>
