@@ -51,7 +51,7 @@ const employeesList: Employee[] = [
 	},
 	{
 		name: 'Олександр',
-		github: 'githubusername',
+		github: 'Oleksandrigo',
 		about: 'Пішов в сзч в перший день праці',
 	},
 	{
