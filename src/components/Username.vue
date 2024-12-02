@@ -15,7 +15,6 @@ export default {
 	},
 	computed: {
 		username() {
-			// Використовуємо пропс `username`, потім текст у слоті, інакше — 'unknown'
 			const slotContent = this.$slots?.default()[0]?.children?.trim();
 			return this.username || slotContent || 'unknown';
 		}
