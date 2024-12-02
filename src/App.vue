@@ -7,33 +7,6 @@ import Username from './components/Username.vue';
 import employeesList from './employees'
 
 const employees = ref(employeesList)
-
-import { onMounted } from 'vue'
-
-// Taken from: https://github.com/okineadev/okineadev-website/blob/0a43328daf7a5752a200618656aff2fa4c2993f3/src/index.html#L539-L560
-// TODO: Refactor this
-onMounted(() => {
-	if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
-		const contentElements = document.querySelectorAll('#container > *')
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry, index) => {
-					if (entry.isIntersecting) {
-						setTimeout(() => {
-							entry.target.classList.add('animate')
-							observer.unobserve(entry.target) // Stop observing once animated
-						}, index * 200) // Apply delay based on index
-					}
-				})
-			},
-			{ threshold: 0.1 },
-		) // Adjust threshold as needed
-
-		for (const element of contentElements) {
-			observer.observe(element)
-		}
-	}
-})
 </script>
 
 <template>

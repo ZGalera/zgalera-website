@@ -9,22 +9,6 @@
 
 	gap: 15px;
 
-	.empty-employee {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		background-color: #fafafa;
-		border: #adadad solid 1.34px;
-		border-radius: 30px;
-		padding: 20px;
-		width: 230px;
-		gap: 4px;
-		box-shadow: rgba(0, 0, 0, 0.0392156863) 0px 0px 10px 0px;
-		transition: transform ease-in-out 0.2s;
-		border-style: dashed;
-	}
-
 	.employee {
 		display: flex;
 		flex-direction: column;
@@ -49,6 +33,11 @@
 		&:hover {
 			transform: scale(1.01) translateY(-2px);
 		}
+
+		// // onclick
+		// &:target {
+		// 	transform: scale(0.6) translateY(4px);
+		// }
 
 		.name,
 		.github,

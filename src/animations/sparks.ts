@@ -79,18 +79,6 @@ const dynamicAnimation = (name: string, rotation: any) => {
 	)
 }
 
-document.addEventListener('click', (e) => {
-	const center = { x: e.pageX, y: e.pageY }
-	makeBurst(center)
-})
-
-const makeBurst = (center: { x: number; y: number }) => {
-	for (let i = 0; i < 8; i++) {
-		const randomSpace = RANDOMNESS_ON ? Math.floor(-17 + Math.random() * 34) : 0
-		makeSpark(center, 45 * i + randomSpace)
-	}
-}
-
 /**
  * Creates a spark
  */
@@ -107,4 +95,11 @@ const makeSpark = (center: { x; y }, rotation: number) => {
 	setTimeout(() => {
 		document.body.removeChild(div)
 	}, 1000)
+}
+
+export default function makeBurst(center: { x: number; y: number }) {
+	for (let i = 0; i < 8; i++) {
+		const randomSpace = RANDOMNESS_ON ? Math.floor(-17 + Math.random() * 34) : 0
+		makeSpark(center, 45 * i + randomSpace)
+	}
 }
