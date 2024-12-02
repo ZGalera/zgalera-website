@@ -51,6 +51,7 @@ u.dotted {
 		text-decoration: none;
 	}
 
+	// Underline
 	u::before {
 		position: absolute;
 		content: '';

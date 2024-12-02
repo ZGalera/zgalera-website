@@ -31,8 +31,10 @@ const employees = ref(employeesList)
 					</Username>, <Username>Latand
 					</Username>, <Username>pluresque</Username>
 					etc.), but also
-					participate in cultural corporate events from Alejandro and Hellicer. After 9 months of unpaid internship, we
-					have a 50% chance (it all depends on you 😉) that we guarantee you an offer of <u class="dotted">$500</u></p>
+					participate in cultural corporate events from <Username>AlexFromLviv</Username> and <Username>Hellicer
+					</Username>. After 9 months of unpaid internship, we have a 50% chance (it all depends on you 😉) that we
+					guarantee you an offer of <u class="dotted">$500</u>
+				</p>
 
 				<br>
 				<p>We offer full remote work. Management and communications in the company are carried out in accordance with
