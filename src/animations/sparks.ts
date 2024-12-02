@@ -1,3 +1,6 @@
+// @ts-nocheck
+// Taken from https://codepen.io/lucasdellabella/pen/RwMyzRd
+
 let styleSheet: HTMLStyleElement | null = null
 
 const SPARK_ELEMENT_WIDTH = 30
@@ -91,7 +94,7 @@ const makeBurst = (center: { x: number; y: number }) => {
 /**
  * Creates a spark
  */
-const makeSpark = (center: { x: any; y: any }, rotation: number) => {
+const makeSpark = (center: { x; y }, rotation: number) => {
 	const div = document.createElement('div')
 	const aniName = `disappear_${rotation}`
 	dynamicAnimation(aniName, rotation)
