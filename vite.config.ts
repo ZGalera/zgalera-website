@@ -16,7 +16,7 @@ export default defineConfig({
 		vue(),
 		createHtmlPlugin({ minify: true }),
 		viteCompression({ include: /\.(js|css|html)$/i }),
-		Sitemap({ hostname: 'https://zgalera.github.io/' }),
+		Sitemap({ hostname: 'https://zgalera.is-local.org/' }),
 	],
 	css: {
 		postcss: {
