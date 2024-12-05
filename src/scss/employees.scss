@@ -30,6 +30,8 @@
 
 		transition: transform ease-in-out 0.2s;
 
+		flex: 1 1 240px;
+
 		&:hover {
 			transform: scale(1.01) translateY(-2px);
 		}
