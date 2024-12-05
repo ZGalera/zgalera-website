@@ -12,5 +12,6 @@
 	"[vue]": {
 		"editor.defaultFormatter": "Vue.volar"
 	},
-	"vite.devCommand": "bun run dev"
+	"vite.devCommand": "bun run dev",
+	"material-icon-theme.activeIconPack": "vue"
 }
