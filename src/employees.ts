@@ -49,16 +49,16 @@ const employeesList: Employee[] = [
 		github: 'okineadev',
 		about: 'Сенйор з Bash скриптів',
 	},
-	// {
-	// 	name: 'Олександр',
-	// 	github: 'Oleksandrigo',
-	// 	about: 'Пішов в сзч в перший день праці',
-	// },
-	// {
-	// 	name: 'Костя',
-	// 	github: 'latand',
-	// 	about: 'В резюме хвастався своїм фоном в курсорі, ейчару сподобалось',
-	// },
+	{
+		name: 'Олександр',
+		github: 'Oleksandrigo',
+		about: 'Пішов в сзч в перший день праці',
+	},
+	{
+		name: 'Костя',
+		github: 'latand',
+		about: 'В резюме хвастався своїм фоном в курсорі, ейчару сподобалось',
+	},
 	{
 		name: 'DK',
 		github: 'githubusername',
