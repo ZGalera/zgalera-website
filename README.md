@@ -50,4 +50,4 @@ We would like to thank the following contributors and resources that have helped
 
 If you have any questions or need support, feel free to reach out to us:
 
-- Telegram: [@okineadev](https://t.me/okineadev)
+- Telegram: [@okineadev](https://telegram.okinea.dev)
